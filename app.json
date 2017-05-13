@@ -1,7 +1,6 @@
 {
   "name": "talkie-react-application",
   "scripts": {
-   "postbuild": "webpack --progress"
   },
   "env": {
   },

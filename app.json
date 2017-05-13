@@ -1,6 +1,7 @@
 {
   "name": "talkie-react-application",
   "scripts": {
+   "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "env": {
   },

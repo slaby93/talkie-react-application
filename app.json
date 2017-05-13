@@ -2,15 +2,10 @@
   "name": "talkie-react-application",
   "scripts": {
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-     "heroku-postbuild": "echo This runs afterwards."
+    "heroku-postbuild": "webpack -p --config webpack.config.js --progress"
   },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
-
-  ],
-  "buildpacks": [
-  ]
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": []
 }

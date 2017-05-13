@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./server/bin/www",
     "develop": "webpack-dev-server --content-base=dist --inline --watch --hot",
-    "postbuild": "webpack --progress",
+    "postbuild": "webpack -p --config webpack.config.js --progress",
     "build": "webpack"
   },
   "repository": {

@@ -4,7 +4,7 @@
   "description": "\"# talkie-react-application\"",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/bin/www",
+    "start": "webpack && node ./server/bin/www",
     "develop": "webpack-dev-server --content-base=dist --inline --watch --hot",
     "postbuild": "webpack -p --config webpack.config.js --progress",
     "build": "webpack"

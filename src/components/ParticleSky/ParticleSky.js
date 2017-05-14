@@ -69,7 +69,7 @@ class ParticleSky extends React.PureComponent {
                         },
                         "move": {
                             "enable": true,
-                            "speed": 0.6,
+                            "speed": 1.0,
                             "direction": "top-right",
                             "random": true,
                             "straight": false,

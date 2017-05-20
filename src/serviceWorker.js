@@ -1,7 +1,8 @@
 const CACHE_NAME = 'talkie-cache';
 const cache_urls = [
     './bundle.js',
-    'login_background_edited.jpg'
+    'login_background_edited.jpg',
+    'manifest.json'
 ];
 
 self.addEventListener('install', function (event) {
@@ -16,16 +17,16 @@ self.addEventListener('install', function (event) {
 });
 
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
-  );
+self.addEventListener('fetch', function (event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function (response) {
+                // Cache hit - return response
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
+            }
+            )
+    );
 });

@@ -16,3 +16,7 @@ ReactDOM.render(
 if (module.hot) {
     module.hot.accept()
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceWorker.js');
+}

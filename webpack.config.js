@@ -21,8 +21,8 @@ const config = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader'
             },
-            {test: /(\.css|\.scss)$/, loaders: ['style-loader', 'css-loader', 'sass-loader']},
-            {test: /\.svg/, loader: 'svg-url-loader'},
+            { test: /(\.css|\.scss)$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
+            { test: /\.svg/, loader: 'svg-url-loader' },
             {
                 test: /\.(gif|png|jpe?g)$/i,
                 loaders: [
@@ -66,6 +66,19 @@ const config = {
             {
                 from: './resources/image/crying_jordan.png',
                 to: './crying_jordan.png'
+            },
+            {
+                from: './manifest.json',
+                to: './manifest.json'
+            },
+            {
+                from: './serviceWorker.js',
+                to: './serviceWorker.js'
+            },
+            {
+                from: './resources/icons/logo*',
+                to: './icons/',
+                flatten: true
             }
         ])
     ]

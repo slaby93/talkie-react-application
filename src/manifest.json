@@ -1,0 +1,25 @@
+{
+    "name": "Talkie",
+    "short_name": "Talkie",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Daniel Slaby & Michal Szewczyk online realtime communicator",
+    "icons": [
+        {
+            "src": "/icons/logo_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/logo_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/logo_64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ]
+}

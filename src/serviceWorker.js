@@ -1,6 +1,7 @@
 const CACHE_NAME = 'talkie-cache';
 const cache_urls = [
-    './bundle.js'
+    './bundle.js',
+    'login_background_edited.jpg'
 ];
 
 self.addEventListener('install', function (event) {

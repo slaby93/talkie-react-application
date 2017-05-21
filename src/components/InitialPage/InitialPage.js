@@ -1,8 +1,8 @@
 import React from 'react'
 import bemClassName from 'bem-classname'
 import ParticleSky from './../ParticleSky'
-
-import {connect} from 'react-redux'
+import { isMobile } from './../../utils/common';
+import { connect } from 'react-redux'
 class InitialPage extends React.PureComponent {
     constructor() {
         super()
@@ -12,7 +12,7 @@ class InitialPage extends React.PureComponent {
     render() {
         return (
             <div className={this.classname()}>
-                <ParticleSky/>
+                {!isMobile() ? <ParticleSky /> : false}
                 <div className={this.classname('childrenWrapper')}>
                     {this.props.children}
                 </div>

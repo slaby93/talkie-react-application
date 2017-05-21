@@ -7,19 +7,23 @@ class Icon extends React.PureComponent {
             .substr(1, icon.length - 1) // takes values between ""
             .replace(/%3C/g, '<')
             .replace(/%3E/g, '>')
+            .replace(/%23/g, '#')
             .replace(/"/g, '')
         result = result
             .substr(
-                result.search(/<svg/g) // trims plugin text
+            result.search(/<svg/g) // trims plugin text
             )
         return result
     }
 
     render() {
-        const translatedIcon = this.translateIcon(this.props.icon)
+        const { onClick, className, icon } = this.props;
+        const translatedIcon = this.translateIcon(icon)
         return (
-            <div onClick={this.props.onClick} className={this.props.className}
-                 dangerouslySetInnerHTML={{__html: translatedIcon}}/>
+            <div onClick={onClick}
+                className={className}
+                dangerouslySetInnerHTML={{ __html: translatedIcon }}
+            />
         )
     }
 }

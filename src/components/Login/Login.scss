@@ -1,55 +1,62 @@
 .Login {
-  &__registerText{
-    color:white;
-    font-size: 11px;
-  }
-
-  &__loginBox {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-  &__email {
-
-  }
-  &__inputBundle {
-    width: 200px;
-    overflow: hidden;
-    input {
-      width: 100%;
-      border: 0;
-      height: 40px;
-      font-size: 12px;
-      font-weight: 600;
-      border-radius: 16px;
-      margin-bottom: 10px;
-      padding: 0 18px;
-      box-sizing: border-box;
-      background-color: rgba(142, 142, 142, 0.39);
-      color: white;
-      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    flex-direction: column;
+    margin-top: 10vh;
+    .LoginHeader {
+        width: 100%;
+    }
+    &__registerText {
         color: white;
-      }
+        font-size: 11px;
     }
-  }
-  &__loginButton {
-    width: 200px;
-    height: 35px;
-    border: none;
-    background-color: rgba(203, 239, 86, 0.52);
-    border-radius: 20px;
-    color: white;
-    margin: 0px;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .2s linear;
-    &:hover{
-      transform: scale(1.02);
+    &__loginBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.35);
+        padding: 20px;
     }
-    &:active {
-      transform: scale(.95);
+    &__email {}
+    &__inputBundle {
+        width: 200px;
+        overflow: hidden;
+        $textColor: black;
+        input {
+            width: 100%;
+            border: 0;
+            height: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding: 0 18px;
+            box-sizing: border-box;
+            background-color: white;
+            color: $textColor;
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: $textColor;
+            }
+        }
     }
-
-  }
+    &__loginButton {
+        width: 200px;
+        height: 35px;
+        border: none;
+        background-color: rgba(255, 57, 57, 0.77);
+        border-radius: 20px;
+        color: white;
+        margin: 0px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .2s linear;
+        &:hover {
+            transform: scale(1.02);
+        }
+        &:active {
+            transform: scale(.95);
+        }
+    }
 }
